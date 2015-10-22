@@ -1,0 +1,47 @@
+<style type="text/css">
+td{font-size: 40px; border: 0px; padding:10px;}
+input{font-size: 40px;}
+.header{font-size: 40px; font-weight:bold;}
+
+.css_btn_class {
+    font-size: 1.4em;
+    font-weight: bold;
+    padding: 10px 30px;
+    background-color: #248;
+    color: #fff;
+    border-style: none;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;	/* Safari,Google Chrome用 */
+    -moz-border-radius: 10px;	/* Firefox用 */
+}
+
+.css_btn_class:hover {
+    background-color: #24d;
+    color: #fff;
+}
+</style>
+
+<table>
+  <tr>
+    <td colspan="2" style="text-align:center; font-size: 35px">受付システム</td>
+  </tr>
+  <tr>
+    <td class="header">名前</td>
+    <td><input type="text" id="visitor_name" style="width:450px; ime-mode: active;" placeholder="ぼうず たろう"></td>
+  </tr>
+  <tr>
+    <td class="header">電話</td>
+    <td><input type="text" id="visitor_tel" style="width:450px; ime-mode: disabled;" placeholder="09099999999"></td>
+  </tr>
+  <tr>
+    <td class="header">人数</td>
+    <td><input type="text" id="visitor_number" style="width:100px; ime-mode: disabled;" placeholder="3"></td>
+  </tr>
+  <tr>
+    <td class="header">座席</td>
+    <td style="font-size: 40px;"><input type="radio" name="visitor_seat" value="テーブル" checked>テーブル <input type="radio" name="visitor_seat" value="カウンター">カウンター</td>
+  </tr>
+  <tr>
+    <td colspan="2" style="text-align:center;"><a href="#" class="css_btn_class" id="btn_reserve">受け付け</a></td>
+  </tr>
+</table>
